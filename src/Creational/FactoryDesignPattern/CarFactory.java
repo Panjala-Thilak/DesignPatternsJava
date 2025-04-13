@@ -14,11 +14,11 @@ public class CarFactory {
     public static Car getCar(String carBrand) {
         switch (carBrand) {
             case "BMW":
-                return new BMW();
+                return new BMWCar();
             case "Benz":
-                return new Benz();
+                return new BenzCar();
             default:
-                return new Nano();
+                return new NanoCar();
         }
     }
 }
